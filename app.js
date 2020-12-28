@@ -3,8 +3,8 @@
 //tipo datos//
 
 // string , cadena de caracteres
-const a ='hola'
-const b = "hola"
+'hola'
+"hola"
 
 // numbers
 10000000
