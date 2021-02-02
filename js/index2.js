@@ -49,9 +49,44 @@ while (num2 <= 10)
 
 //for bucle determinado
 document.write(`<br><b>Bucle Determinado FOR</b><br>`)
-for (let i = 0; i < 6; i++) {
-    document.write(`${(i)}<br>`)
+for (let i = 1; i <= 4; i++) {
+    if (i == 2) {
+        continue;
+    }
+    document.write(`Daniel ${(i)}<br>`)
+
 
 }
 
+//for IN
+document.write(`<br><b>FOR IN</b><br>`);
+let numeros = ["1a", "2a", "3b", "4c", "5d"];
+for (numero in numeros) {
+    document.write(`${numeros[numero]} es la posicion<br>`);
+}
+document.write(`<br>`)
+for (numero of numeros) {
+    document.write(`${(numero)} es la otra posicion<br>`);
+}
 
+document.write(`<br>`);
+
+estado = ["inicio", "nudo", "desenlace"];
+array = ["como", "esta", estado, "tu"];
+
+forInicio:
+for (let arrays in array) {
+    if (arrays == 2) {
+        for (let arrays of estado) {
+            
+            document.write(`${(arrays)}<br>`)
+            break forInicio;
+        }
+
+    } else {
+        document.write(`${(array[arrays])}<br>`)
+    }
+
+}
+
+document.write(`<br><b>FUNCIONES<br>`)
