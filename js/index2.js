@@ -69,16 +69,17 @@ for (numero of numeros) {
     document.write(`${(numero)} es la otra posicion<br>`);
 }
 
+//for IN
 document.write(`<br>`);
 
 estado = ["inicio", "nudo", "desenlace"];
 array = ["como", "esta", estado, "tu"];
-
+//f
 forInicio:
 for (let arrays in array) {
     if (arrays == 2) {
         for (let arrays of estado) {
-            
+
             document.write(`${(arrays)}<br>`)
             break forInicio;
         }
@@ -88,5 +89,38 @@ for (let arrays in array) {
     }
 
 }
-
+// FUNCIONES
 document.write(`<br><b>FUNCIONES<br>`)
+
+
+function saludo() {
+    // estadoP = prompt("como estas ?");
+
+
+    if (estadoP == "bien") {
+        alert("genial")
+        
+
+    } else if (estadoP == "mal") {
+        alert("espero mejores")
+        
+    } else {
+        alert("no se tu estado")
+        console.log(`escribiste "${(estadoP)}"`)
+        saludo();
+
+    }
+    return `Tu estado es ${(estadoP)}`;
+    
+}
+let estadoV = saludo();
+console.log(estadoV);
+
+
+
+
+
+
+
+
+
